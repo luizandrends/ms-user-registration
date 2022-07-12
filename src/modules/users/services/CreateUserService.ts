@@ -44,7 +44,7 @@ class CreateUserService {
         topicName: 'load-login-database',
       },
       email,
-      password,
+      password: hashedPassword,
       userId: user.id,
     });
 
