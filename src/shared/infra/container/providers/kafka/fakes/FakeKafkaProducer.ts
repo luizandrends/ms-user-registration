@@ -1,5 +1,5 @@
 import KafkaProducerDTO from '../dtos/KafkaProducerDTO';
-import KafkaProducerInterface from '../interfaces/KafkaProducerInterface';
+import { KafkaProducerInterface } from '../interfaces/KafkaProducerInterface';
 
 export default class FakeKafkaProducer implements KafkaProducerInterface {
   private events: KafkaProducerDTO[] = [];
