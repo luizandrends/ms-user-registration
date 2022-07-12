@@ -1,0 +1,13 @@
+import { BCryptHashProviderInterface } from '../interfaces/BCryptHashProviderInterface';
+
+class FakeBCryptHashProvider implements BCryptHashProviderInterface {
+  public async generateHash(payload: string): Promise<string> {
+    return payload;
+  }
+
+  public async compareHash(payload: string, hashed: string): Promise<boolean> {
+    return payload === hashed;
+  }
+}
+
+export default FakeBCryptHashProvider;
